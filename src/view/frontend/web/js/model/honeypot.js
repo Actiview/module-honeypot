@@ -27,9 +27,9 @@ define([
 
         createElement: function () {
             var element = document.createElement('input');
-            element.type = "text";
-            element.name = 'url';
-            element.className = 'url-input required';
+            element.type = 'text';
+            element.name = this.fieldName;
+            element.className = this.fieldClass;
             element.style = 'display: none';
 
             return element;

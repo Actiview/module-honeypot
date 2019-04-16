@@ -44,8 +44,22 @@ class Honeypot extends Template
     }
 
     /**
-     * Get form css selectors
-     *
+     * @return mixed
+     */
+    public function getFieldName()
+    {
+        return $this->configuration->getFieldName();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFieldClass()
+    {
+        return $this->configuration->getFieldClass();
+    }
+
+    /**
      * @return mixed
      */
     public function getForms()

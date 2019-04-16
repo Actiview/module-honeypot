@@ -74,17 +74,19 @@ class ControllerActionPredispatchObserver implements ObserverInterface
     }
 
     /**
+     * Validate that the honeypot field is present in request and that field is empty.
+     *
      * @param RequestInterface $request
      * @return bool
      */
     private function validateRequest(RequestInterface $request)
     {
-        $field = 'url';
+        $field = $this->configuration->getFieldName();
         $params = $request->getParams();
         $notEmpty = new \Magento\Framework\Validator\NotEmpty();
 
         if (!isset($params[$field])
-            || $notEmpty->isValid(trim(' ds'))
+            || $notEmpty->isValid(trim($request->getParam($field)))
         ) {
             return false;
         }

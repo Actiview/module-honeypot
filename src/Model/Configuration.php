@@ -12,6 +12,8 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 class Configuration
 {
     const XML_PATH_ENABLE = 'system/honeypot/enable';
+    const XML_PATH_FIELD_NAME = 'system/honeypot/field_name';
+    const XML_PATH_FIELD_CLASS = 'system/honeypot/field_class';
     const XML_PATH_ACTIONS = 'system/honeypot/actions';
     const XML_PATH_FORMS = 'system/honeypot/forms';
 
@@ -37,6 +39,26 @@ class Configuration
     public function isEnabled($scopeType = 'store', $scopeCode = null)
     {
         return $this->scopeConfig->isSetFlag(self::XML_PATH_ENABLE, $scopeType, $scopeCode);
+    }
+
+    /**
+     * @param string $scopeType
+     * @param null $scopeCode
+     * @return mixed
+     */
+    public function getFieldName($scopeType = 'store', $scopeCode = null)
+    {
+        return $this->scopeConfig->getValue(self::XML_PATH_FIELD_NAME, $scopeType, $scopeCode);
+    }
+
+    /**
+     * @param string $scopeType
+     * @param null $scopeCode
+     * @return mixed
+     */
+    public function getFieldClass($scopeType = 'store', $scopeCode = null)
+    {
+        return $this->scopeConfig->getValue(self::XML_PATH_FIELD_CLASS, $scopeType, $scopeCode);
     }
 
     /**

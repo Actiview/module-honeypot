@@ -1,0 +1,13 @@
+<?php
+/** @var \Actiview\Honeypot\Block\Honeypot $block */
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Actiview_Honeypot/js/model/honeypot": {
+                "forms": <?= json_encode($block->getForms()) ?>
+            }
+        }
+    }
+</script>

@@ -8,7 +8,7 @@
     "spam"
   ],
   "type": "magento2-module",
-  "license": "",
+  "license": "OSL-3.0",
   "authors": [
     {
       "name": "Rik Willems"

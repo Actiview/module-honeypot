@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <system>
+            <honeypot>
+                <enable>0</enable>
+                <actions>newsletter_subscriber_new
+                    customer_account_createpost
+                    contact_index_post</actions>
+                <forms>.form.subscribe
+                    .form.form-create-account
+                    .form.contact-us</forms>
+            </honeypot>
+        </system>
+    </default>
+</config>

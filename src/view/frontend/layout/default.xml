@@ -4,7 +4,7 @@
     <body>
 
         <referenceContainer name="before.body.end">
-            <block class="Actiview\Honeypot\Block\Honeypot" name="actiview-honeypot" after="-" />
+            <block class="Actiview\Honeypot\Block\Honeypot" name="actiview.honeypot" template="Actiview_Honeypot::honeypot.phtml" after="-" />
         </referenceContainer>
 
     </body>

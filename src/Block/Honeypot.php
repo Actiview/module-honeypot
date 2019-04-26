@@ -12,8 +12,6 @@ use Actiview\Honeypot\Model\Configuration;
  */
 class Honeypot extends Template
 {
-    protected $_template = 'Actiview_Honeypot::honeypot.phtml';
-
     /** @var Configuration */
     protected $configuration;
 
@@ -34,13 +32,13 @@ class Honeypot extends Template
     /**
      * @inheritdoc
      */
-    public function _toHtml()
+    public function toHtml()
     {
         if (!$this->configuration->isEnabled()) {
-            return 'test';
+            return '';
         }
 
-        return parent::_toHtml();
+        return parent::toHtml();
     }
 
     /**

@@ -1,15 +1,17 @@
 <?php
 /** @var \Actiview\Honeypot\Block\Honeypot $block */
+
+$jsConfig = [
+    'forms' => $block->getForms(),
+    'fieldName' => $block->getFieldName(),
+    'fieldClass' => $block->getFieldClass(),
+];
 ?>
 
 <script type="text/x-magento-init">
     {
         "*": {
-            "Actiview_Honeypot/js/model/honeypot": {
-                "forms": <?= json_encode($block->getForms()) ?>,
-                "fieldName": "<?= $block->escapeHtml($block->getFieldName()) ?>",
-                "fieldClass": "<?= $block->escapeHtml($block->getFieldClass()) ?>"
-            }
+            "Actiview_Honeypot/js/model/honeypot": <?= json_encode($jsConfig) ?>
         }
     }
 </script>

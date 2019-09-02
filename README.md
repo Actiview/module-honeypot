@@ -14,8 +14,11 @@ Module configuration can be found in the backend: 'Stores' > 'Configuration' > '
 
 ## Changelog
 
-### 0.1.1
-Fix IE Error - Attempted to assign to readonly property - in strict mode - contribution by michi-z
+### 0.1.2
+Fix IE Error - Attempted to assign to readonly property - in strict mode (contribution by michi-z)
+
+### 0.1.1 
+Javascript change and fixes after first release.
 
 ### 0.1.0 
 First release of this module.

@@ -30,7 +30,7 @@ define([
             element.type = 'text';
             element.name = this.fieldName;
             element.className = this.fieldClass;
-            element.style = 'display: none';
+            element.style.display = 'none';
 
             return element;
         }

@@ -13,6 +13,13 @@ Module configuration can be found in the backend: 'Stores' > 'Configuration' > '
 [Open Software License v. 3.0 (OSL-3.0)](https://opensource.org/licenses/OSL-3.0)
 
 ## Changelog
+
+### 0.1.2
+Fix IE Error - Attempted to assign to readonly property - in strict mode (contribution by michi-z)
+
+### 0.1.1 
+Javascript change and fixes after first release.
+
 ### 0.1.0 
 First release of this module.
 

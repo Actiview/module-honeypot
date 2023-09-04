@@ -93,7 +93,7 @@ class Configuration
     {
         return array_map('trim', preg_split(
             '/(\r\n|\n|\r)/',
-            $value,
+            $value ?? '',
             -1,
             PREG_SPLIT_NO_EMPTY
         ));

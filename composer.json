@@ -14,10 +14,9 @@
       "name": "Rik Willems"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
-    "magento/framework": ">=100.1.0",
-    "magento/module-theme": ">=100.1.0"
+    "magento/framework": ">=103.0.0",
+    "magento/module-theme": ">=101.1"
   },
   "autoload": {
     "psr-4": {
